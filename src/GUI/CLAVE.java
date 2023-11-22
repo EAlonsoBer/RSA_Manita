@@ -28,18 +28,32 @@ public class CLAVE extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         btn512 = new javax.swing.JButton();
         btn1024 = new javax.swing.JButton();
-        btn2048 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        K2048 = new javax.swing.JButton();
+        btn2049 = new javax.swing.JButton();
+        K3072 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("CLAVE");
+        setForeground(new java.awt.Color(153, 255, 204));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
+
+        jLabel1.setFont(new java.awt.Font("Maiandra GD", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(151, 150, 22));
         jLabel1.setText("SELECCIONE EL TAMAÑO DE LA");
 
-        btn512.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Maiandra GD", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(151, 150, 22));
+        jLabel2.setText("CLAVE PARA CIFRAR");
+
+        btn512.setBackground(new java.awt.Color(0, 102, 102));
+        btn512.setFont(new java.awt.Font("Maiandra GD", 0, 18)); // NOI18N
+        btn512.setForeground(new java.awt.Color(255, 255, 255));
         btn512.setText("512");
         btn512.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,7 +61,9 @@ public class CLAVE extends javax.swing.JFrame {
             }
         });
 
-        btn1024.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btn1024.setBackground(new java.awt.Color(0, 102, 102));
+        btn1024.setFont(new java.awt.Font("Maiandra GD", 0, 18)); // NOI18N
+        btn1024.setForeground(new java.awt.Color(255, 255, 255));
         btn1024.setText("1024");
         btn1024.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,52 +71,87 @@ public class CLAVE extends javax.swing.JFrame {
             }
         });
 
-        btn2048.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btn2048.setText("2048");
-        btn2048.addActionListener(new java.awt.event.ActionListener() {
+        K2048.setBackground(new java.awt.Color(0, 102, 102));
+        K2048.setFont(new java.awt.Font("Maiandra GD", 0, 18)); // NOI18N
+        K2048.setForeground(new java.awt.Color(255, 255, 255));
+        K2048.setText("2048");
+        K2048.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn2048ActionPerformed(evt);
+                K2048ActionPerformed(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel2.setText("CLAVE PARA CIFRAR");
+        btn2049.setBackground(new java.awt.Color(0, 102, 102));
+        btn2049.setFont(new java.awt.Font("Maiandra GD", 0, 18)); // NOI18N
+        btn2049.setForeground(new java.awt.Color(255, 255, 255));
+        btn2049.setText("4096");
+        btn2049.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2049ActionPerformed(evt);
+            }
+        });
+
+        K3072.setBackground(new java.awt.Color(0, 102, 102));
+        K3072.setFont(new java.awt.Font("Maiandra GD", 0, 18)); // NOI18N
+        K3072.setForeground(new java.awt.Color(255, 255, 255));
+        K3072.setText("3072");
+        K3072.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                K3072ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel2)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btn512)
+                                .addGap(26, 26, 26)
+                                .addComponent(btn1024)
+                                .addGap(28, 28, 28)
+                                .addComponent(K2048)
+                                .addGap(26, 26, 26)
+                                .addComponent(K3072)))
+                        .addGap(31, 31, 31)
+                        .addComponent(btn2049)))
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addGap(96, 96, 96)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn512)
+                    .addComponent(btn1024)
+                    .addComponent(btn2049)
+                    .addComponent(K2048)
+                    .addComponent(K3072))
+                .addContainerGap(50, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(btn512)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
-                        .addComponent(btn1024)
-                        .addGap(72, 72, 72)
-                        .addComponent(btn2048))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)))
-                .addGap(79, 79, 79))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(145, 145, 145))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addGap(91, 91, 91)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn512)
-                    .addComponent(btn1024)
-                    .addComponent(btn2048))
-                .addContainerGap(105, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -125,13 +176,29 @@ public class CLAVE extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btn1024ActionPerformed
 
-    private void btn2048ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2048ActionPerformed
+    private void K2048ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_K2048ActionPerformed
         resultado res = new resultado();
         res.setLLave(2048, txt);
         res.setVisible(true);
         res.setLocationRelativeTo(null);
         this.dispose();
-    }//GEN-LAST:event_btn2048ActionPerformed
+    }//GEN-LAST:event_K2048ActionPerformed
+
+    private void btn2049ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2049ActionPerformed
+        resultado res = new resultado();
+        res.setLLave(4096, txt);
+        res.setVisible(true);
+        res.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btn2049ActionPerformed
+
+    private void K3072ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_K3072ActionPerformed
+        resultado res = new resultado();
+        res.setLLave(3072, txt);
+        res.setVisible(true);
+        res.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_K3072ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,10 +206,13 @@ public class CLAVE extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton K2048;
+    private javax.swing.JButton K3072;
     private javax.swing.JButton btn1024;
-    private javax.swing.JButton btn2048;
+    private javax.swing.JButton btn2049;
     private javax.swing.JButton btn512;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
